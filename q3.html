@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Application Form</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+      }
+      form {
+        max-width: 600px;
+        margin: auto;
+      }
+      input[type="text"],
+      input[type="email"],
+      input[type="tel"],
+      textarea,
+      select {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      input[type="checkbox"] {
+        margin-right: 5px;
+      }
+      input[type="submit"],
+      button {
+        background-color: #4caf50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      input[type="submit"]:hover,
+      button:hover {
+        background-color: #45a049;
+      }
+      .table-container {
+        overflow-x: auto;
+        margin-top: 20px;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+      }
+      th {
+        background-color: #4caf50;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="jobApplicationForm">
+      <h2>Job Application Form</h2>
+      <h3>Personal Information:</h3>
+      <input
+        type="text"
+        id="firstName"
+        name="firstName"
+        placeholder="First Name"
+        required
+      />
+      <input
+        type="text"
+        id="lastName"
+        name="lastName"
+        placeholder="Last Name"
+        required
+      />
+      <input
+        type="tel"
+        id="phoneNumber"
+        name="phoneNumber"
+        placeholder="Phone Number"
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+        required
+      />
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Email Address"
+        required
+      />
+      <input
+        type="text"
+        id="street"
+        name="street"
+        placeholder="Street Address"
+        required
+      />
+      <input type="text" id="city" name="city" placeholder="City" required />
+      <input type="text" id="state" name="state" placeholder="State" required />
+      <input
+        type="text"
+        id="zipCode"
+        name="zipCode"
+        placeholder="ZIP Code"
+        pattern="[0-9]{5}"
+        required
+      />
+
+      <h3>Resume and Cover Letter:</h3>
+      <input
+        type="file"
+        id="resume"
+        name="resume"
+        accept=".pdf,.doc,.docx"
+        required
+      />
+      <textarea
+        id="coverLetter"
+        name="coverLetter"
+        placeholder="Cover Letter"
+        rows="4"
+        required
+      ></textarea>
+
+      <h3>Education:</h3>
+      <input
+        type="text"
+        id="educationLevel"
+        name="educationLevel"
+        placeholder="Highest Level of Education Attained"
+        required
+      />
+      <input
+        type="text"
+        id="schoolName"
+        name="schoolName"
+        placeholder="Name of School/University"
+        required
+      />
+      <input
+        type="text"
+        id="major"
+        name="major"
+        placeholder="Major/Area of Study"
+        required
+      />
+      <input
+        type="text"
+        id="graduationYear"
+        name="graduationYear"
+        placeholder="Graduation Year"
+        pattern="[0-9]{4}"
+        required
+      />
+
+      <h3>Employment History:</h3>
+      <input
+        type="text"
+        id="jobTitles"
+        name="jobTitles"
+        placeholder="Previous Job Titles"
+        required
+      />
+      <input
+        type="text"
+        id="companyNames"
+        name="companyNames"
+        placeholder="Company Names"
+        required
+      />
+      <input
+        type="text"
+        id="employmentDates"
+        name="employmentDates"
+        placeholder="Employment Dates"
+        required
+      />
+      <textarea
+        id="jobResponsibilities"
+        name="jobResponsibilities"
+        placeholder="Job Responsibilities"
+        rows="4"
+        required
+      ></textarea>
+
+      <h3>Skills:</h3>
+      <input
+        type="text"
+        id="skills"
+        name="skills"
+        placeholder="Relevant Skills"
+        required
+      />
+      <input
+        type="text"
+        id="certifications"
+        name="certifications"
+        placeholder="Certifications"
+      />
+
+      <h3>Availability:</h3>
+      <input
+        type="date"
+        id="startDate"
+        name="startDate"
+        placeholder="Start Date"
+        required
+      />
+      <input
+        type="text"
+        id="workSchedule"
+        name="workSchedule"
+        placeholder="Preferred Work Schedule"
+        required
+      />
+      <input type="checkbox" id="relocate" name="relocate" />
+      <label for="relocate">Willingness to Relocate</label>
+
+      <h3>References:</h3>
+      <input
+        type="text"
+        id="referenceName"
+        name="referenceName"
+        placeholder="Reference Name"
+        required
+      />
+      <input
+        type="tel"
+        id="referenceContact"
+        name="referenceContact"
+        placeholder="Reference Contact Information"
+        required
+      />
+      <input
+        type="text"
+        id="relationship"
+        name="relationship"
+        placeholder="Relationship to Applicant"
+        required
+      />
+
+      <h3>Additional Questions:</h3>
+      <textarea
+        id="whyWorkHere"
+        name="whyWorkHere"
+        placeholder="Why do you want to work for this company?"
+        rows="4"
+        required
+      ></textarea>
+
+      <h3>Consent and Agreement:</h3>
+      <input
+        type="checkbox"
+        id="termsAgreement"
+        name="termsAgreement"
+        required
+      />
+      <label for="termsAgreement">I agree to the terms and conditions</label>
+      <br />
+      <input type="checkbox" id="privacyPolicy" name="privacyPolicy" required />
+      <label for="privacyPolicy">I acknowledge the privacy policy</label>
+
+      <input type="submit" value="Submit" />
+    </form>
+
+    <div class="table-container">
+      <button onclick="viewApplications()">View Applications as Table</button>
+      <table id="applicationsTable" style="display: none"></table>
+    </div>
+
+    <script>
+      function viewApplications() {
+        var formData = new FormData(
+          document.getElementById("jobApplicationForm")
+        );
+        var table = document.getElementById("applicationsTable");
+        table.innerHTML = "";
+
+        var headerRow = table.insertRow(0);
+        var headers = [
+          "First Name",
+          "Last Name",
+          "Phone Number",
+          "Email",
+          "Street",
+          "City",
+          "State",
+          "ZIP Code",
+          "Cover Letter",
+          "Education Level",
+          "School Name",
+          "Major",
+          "Graduation Year",
+          "Previous Job Titles",
+          "Company Names",
+          "Employment Dates",
+          "Job Responsibilities",
+          "Relevant Skills",
+          "Certifications",
+          "Start Date",
+          "Preferred Work Schedule",
+          "Willingness to Relocate",
+          "Reference Name",
+          "Reference Contact Information",
+          "Relationship to Applicant",
+          "Why Work Here",
+        ];
+        for (var i = 0; i < headers.length; i++) {
+          var headerCell = headerRow.insertCell(i);
+          headerCell.innerHTML = headers[i];
+        }
+
+        var row = table.insertRow(1);
+        formData.forEach(function (value, key) {
+          var cell = row.insertCell();
+          cell.innerHTML = value;
+        });
+
+        table.style.display = "table";
+      }
+
+      document
+        .getElementById("jobApplicationForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          if (validateForm()) {
+            console.log("Form submitted successfully");
+            viewApplications();
+          } else {
+            console.log("Form submission failed");
+          }
+        });
+
+      function validateForm() {
+        // Perform validation for each field here
+        // Example: Validate email format, phone number format, etc.
+        return true; // Return true if all validations pass, otherwise return false
+      }
+    </script>
+  </body>
+</html>
