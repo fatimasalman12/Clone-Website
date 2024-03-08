@@ -1,4 +1,4 @@
-Assignment 1 
+<strong> Assignment 1 </strong> 
 <br>
 Q1 - contains resume/portfolio : <strong> made using html and css purely </strong>  
 <br>
