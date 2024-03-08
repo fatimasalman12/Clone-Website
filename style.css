@@ -1,44 +1,383 @@
-body {
-    font-family: Arial, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,600;1,100;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,600;1,100;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,600;1,100;1,600&display=swap');
+
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-.container {
-    max-width: 800px;
-    margin: 20px auto;
+.img1 {
+    background: url("C:\Users\DELL\Desktop\webdev\Web_programming\images\blue2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 450px;
+    border-bottom-right-radius: 50vh;
+}
+
+.image1 {
+    width: 1350px;
+    height: 600px;
+    border-bottom-right-radius: 50vw;
+}
+
+.content-container {
+    padding: 100px 40px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.wrapAroundDiv {
+    background-color: #5571c5ea;
+    padding: 10px;
+    width: 50%;
+    height: 130px;
+    margin-top: -110px;
+    margin-left: 24px;
+    border-radius: 20px;
+}
+
+.box {
+    background-color: rgba(23, 23, 85, 0.904);
+    height: 140px;
+    width: 50%;
+    margin-top: 40px;
+    border-radius: 20px;
     padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-header h1 {
-    font-size: 24px;
-    margin-bottom: 10px;
+.intro {
+    line-height: 2;
+    text-align: left;
+    font-size: 15px;
 }
 
-header p {
+.icon-container {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.icon-container img {
+    width: 40px;
+    /* Adjust the size of your icons */
+    height: auto;
+    margin-left: 40px;
+    /* Adjust the spacing between icons */
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    /* Adjust the spacing between icons */
+}
+
+.icon span {
+    margin-top: 10px;
+    margin-left: 35px;
+    color: #fff;
+}
+
+.icon span a {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    color: #fff;
+}
+
+.icon span a:hover {
+    color: #B4B4B8;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+.myimg {
+    height: 200px;
+    width: 200px;
+    margin-left: 1000px;
+    margin-top: -50px;
+    border: 10px solid white;
+    border-radius: 100%;
+}
+
+.desc {
+    line-height: 2;
+    text-align: left;
+    width: 50%;
+    margin-top: -80px;
+    margin-left: 100px;
     font-size: 16px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(43, 41, 41);
+}
+
+.book-icon {
+    height: 50px;
+    width: 50px;
+    margin-left: 20px;
+    margin-top: -20px;
+}
+
+/* styling the horizontal line */
+.normal-line {
+    border: dotted #5571c5ea 5px;
+    width: 10%;
+    border-bottom: none;
+    margin: 20px auto;
+}
+
+.heading1 {
+    background-color: #5571c5e5;
+    width: 50%;
+    height: 90px;
+    margin-left: 340px;
+    margin-top: -70px;
+    border-radius: 20px;
+}
+
+.head2 {
+    background-color: rgba(23, 23, 85, 0.87);
+    height: 90px;
+    width: 50%;
+    margin-top: 80px;
+    border-radius: 20px;
+    margin-left: 300px;
+}
+
+.heading1 h1 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+    color: white;
+    margin-left: 50px;
+}
+
+.edu-icon{
+    height: 30px;
+    width: 30px;  
+}
+.edu-icon img{
+    height: 60px;
+    width: 60px;
+    margin-top: 135px; 
+    margin-left: 465px;
+}
+
+.table-div {
+    height: 400px;
+    width: 80%;
+    background-color: rgba(23, 23, 85, 0.829);
+    margin-top: 50px;
+    margin-left: 130px;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    box-shadow: rgb(26, 25, 25);
+}
+
+.degree {
+    height: 380px;
+    width: 300px;
+    background-color: #5571c5c7;
+    /* margin-top: 50px; */
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+}
+.back-pic{
+    background: url("C:\Users\DELL\Desktop\webdev\Web_programming\images\blueimg (4).jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+    border-top-left-radius: 150px;
+    border-bottom-left-radius: 150px;
+}
+.degree h2{
+    font-size: 30px;
+    font-weight: 900;
+    font-family: 'Montserrat', sans-serif;
+    color: white; 
+
+}
+
+.degree p{
+    font-size: 25px;
+    font-weight: normal;
+    font-family: 'Montserrat', sans-serif;
+    color: white; 
+    margin: 40px auto; 
+}
+/* Skills CSS portion */
+.skills-back-pic{
+    background: url("C:\Users\DELL\Desktop\webdev\Web_programming\images\blueimg (3).jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+    /* border-top-left-radius: 150px;  */
+    border-top-right-radius: 150px; 
+    border-bottom-right-radius: 150px;
+}
+
+.skills-icon{
+    height: 30px;
+    width: 30px;  
+}
+.skills-icon img{
+    height: 60px;
+    width: 60px;
+    margin-top: 135px; 
+    margin-left: 490px;
+}
+
+.skill1{
+    height: 200px;
+    width: 200px;
+    background-color: #5571c5c7;
+    margin: auto; 
+    padding: 10px;
+    border-radius: 20px;
+}
+.skill1 p{
+    font-size: 25px;
+    font-weight: normal;
+    font-family: 'Montserrat', sans-serif;
+    color: white; 
+    /* margin: 40px auto; */
+}
+.skill1 img{
+    width: 70px; 
+    margin-left: 50px;
     margin-bottom: 20px;
 }
-
-section {
-    margin-bottom: 30px;
+.table-div1{
+    height: 300px;
+    width: 80%;
+    background-color: rgba(23, 23, 85, 0.829);
+    margin-top: 50px;
+    margin-left: 130px;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    box-shadow: rgb(26, 25, 25); 
 }
 
-section h2 {
+/* Portfolio part here  */
+.portfolio-back-pic{
+    background: url("C:\Users\DELL\Desktop\webdev\Web_programming\images\htmlimg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+    /* border-top-left-radius: 150px;  */
+    border-top-left-radius: 150px; 
+    border-bottom-left-radius: 150px;
+}
+
+.skill2{
+    height: 250px;
+    width: 200px;
+    background-color: #5571c5a8;
+    margin: auto; 
+    padding: 10px;
+    border-radius: 20px;
+}
+.skill2 p{
     font-size: 20px;
-    margin-bottom: 10px;
+    font-weight: normal;
+    font-family: 'Montserrat', sans-serif;
+    color: white; 
+    /* margin: 40px auto; */
+}
+.skill2 img{
+    width: 70px; 
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+.skill2 p span{
+    font-weight: bold;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
+/* Contact Area CSS */
+.contact-back-pic{
+    background: url("C:\Users\DELL\Desktop\webdev\Web_programming\images\pexels-markus-spiske-360591.jpg");
+    border-top-left-radius: 150px; 
+    border-top-right-radius: 150px;
+    background-color: rgba(23, 23, 85, 0.829);
+}
+.table-div3{
+    height: 150px;
+    width: 80%;
+    /* background-color: rgba(23, 23, 85, 0.829); */
+    margin-top: 50px;
+    margin-left: 130px;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.table-div3 p{
+    font-size: 20px;
+    font-weight: normal;
+    font-family: 'Montserrat', sans-serif;
+    color: white; 
+    /* margin: 40px auto; */
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
+.skill3{
+    height: 100px;
+    width: 150px;
+    background-color: #5571c5a8;
+    margin: auto; 
+    padding: 10px;
+    border-radius: 20px;
+}
+.skill3 p{
+    font-size: 15px;
+    font-weight: normal;
+    font-family: 'Montserrat', sans-serif;
+    color: white; 
+    margin: auto;
+
+}
+.skill3 img{
+    width: 40px; 
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+.skill3 a{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: normal;
+    font-family: 'Montserrat', sans-serif;
+    color: white; 
+
+}
+.skill3 a:hover{
+    color: rgba(97, 140, 233, 0.575); 
+}
+.copyright{
+    font-size: 12px;
+    font-weight: normal;
+    font-family: 'Montserrat', sans-serif;
+    color: white; 
+    margin-left: 600px;
+    margin-top: 10px;
 }
