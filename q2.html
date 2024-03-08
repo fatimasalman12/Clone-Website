@@ -5,68 +5,143 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>PeoplePerHour Replica</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-<style>
-    /* Custom styles can be added here */
-</style>
+<link rel="stylesheet" href="bootstyle.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-DkbvB6Z6Kx4JK9fUv5/de3+BrFfRt8RXE1lzMmxhN8E1pqgJLr6SKnD9+WWE7vB8" crossorigin="anonymous">
+
+
 </head>
 <body>
 
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">PeoplePerHour</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">   -->
+  
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <!-- <i class="fa-regular fa-face-meh-blank" style="color: #ffa424;"></i>people -->
+      <img src="https://img.icons8.com/windows/32/EF8C1A/meh-blank.png" alt="meh-blank" style="width: 28px; height: 28px;"/> <strong>people</strong>per<strong>hour</strong>
+    </a>
+    <!-- Rest of your navbar content -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
-        <a class="nav-link" href="#">Browse</a>
+        <a class="nav-link text-bold" href="#">HOW IT WORKS</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Post a Job</a>
+        <a class="nav-link text-bold" href="#">LOG IN </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Sign In</a>
+        <a class="nav-link text-bold" href="#">SIGN UP</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Join</a>
+        <a class="nav-link freelancer-link"  href="#">FREELANCER?</a>
       </li>
     </ul>
   </div>
 </nav>
 
+<!--Center navigation bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg">
+  <!-- Rest of your navbar content -->
+<div class="collapse navbar-collapse" id="navbarNav">
+  <ul class="navbar-nav item-text">
+    <li class="nav-item">
+      <a class="nav-link" href="#">Technology & Programming</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Writing & Translation</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Design</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Digital Marketing</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Video,Photo & Image</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Bussiness</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Music & Audio</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Marketing, Branding & Sales</a>
+    </li>  
+    <li class="nav-item">
+      <a class="nav-link" href="#">Social Media</a>
+    </li>
+  </ul>
+</div>
+</nav>
+
+
 <!-- Hero Section -->
 <section class="jumbotron text-center">
   <div class="container">
-    <h1 class="jumbotron-heading">Get Work Done Faster, Better</h1>
-    <p class="lead text-muted">Hire expert freelancers for any job, online.</p>
-    <p>
-      <a href="#" class="btn btn-primary my-2">Browse Freelancers</a>
-      <a href="#" class="btn btn-secondary my-2">Post a Job</a>
-    </p>
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h1 class="jumbotron-heading bright-ideas"  style="color: #E89215">Make bright ideas happen</h1>
+        <p class="lead text-muted bright-ideas-paragraph">Access global talent on the freelancer website trusted by over 1 million businesses worldwide.</p>
+        <!-- Search box -->
+        <div class="input-group mb-3">
+          <input type="text" class="form-control search-bar" placeholder="Search for freelancers" aria-label="Search for freelancers" aria-describedby="button-addon2">
+          <div class="input-group-append">
+            <!-- button doesnt contain text it contains 'search icon' -->
+            <button class="btn btn-warning" type="button" id="button-addon2">Search</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <img src="https://images.pexels.com/photos/4559555/pexels-photo-4559555.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="meh-blank" class="img-fluid">
+        <!-- <img src = "https://images.pexels.com/photos/109371/pexels-photo-109371.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      </div> -->
+    </div>
   </div>
 </section>
 
+
 <!-- Services Section -->
 <section class="container">
+  <h2 class="cont-header">Most popular categories</h2>
   <div class="row">
-    <div class="col-md-4">
-      <h2>Find Freelancers</h2>
-      <p>Hire skilled professionals for any task online.</p>
+    <div class="col-lg-3 col-md-4 col-sm-6 col-12 service-box" id="content-writing">
+      <h2>Content Writing</h2>
+      <p>Engage your community</p>
       <p><a class="btn btn-secondary" href="#" role="button">Browse Freelancers &raquo;</a></p>
     </div>
-    <div class="col-md-4">
-      <h2>Post a Job</h2>
-      <p>Tell us about your project, and we'll connect you with the right freelancers.</p>
+    <div class="col-lg-3 col-md-4 col-sm-6 col-12 service-box" id="post-job">
+      <h2>SEO</h2>
+      <p>Boost your traffic</p>
       <p><a class="btn btn-secondary" href="#" role="button">Post a Job &raquo;</a></p>
     </div>
-    <div class="col-md-4">
-      <h2>Secure Payments</h2>
-      <p>Pay for work securely and safely. Only release payment when satisfied with the work.</p>
+    <div class="col-lg-3 col-md-4 col-sm-6 col-12 service-box" id="secure-payments">
+      <h2>Website Development</h2>
+      <p>Build your site</p>
+      <p><a class="btn btn-secondary" href="#" role="button">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-6 col-12 service-box" id="logo-design">
+      <h2>Logo Design</h2>
+      <p>Elevate your brand</p>
+      <p><a class="btn btn-secondary" href="#" role="button">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-6 col-12 service-box" id="voice-over">
+      <h2>Voice Over</h2>
+      <p>Tell your story</p>
+      <p><a class="btn btn-secondary" href="#" role="button">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-6 col-12 service-box" id="drawings">
+      <h2>Illustration and Drawings</h2>
+      <p>Picture your idea</p>
       <p><a class="btn btn-secondary" href="#" role="button">Learn more &raquo;</a></p>
     </div>
   </div>
 </section>
+
+
 
 <!-- Footer -->
 <footer class="text-muted">
